@@ -1,6 +1,10 @@
 package ladysnake.blast.common;
 
-import ladysnake.blast.common.init.*;
+import ladysnake.blast.common.init.BlastBlocks;
+import ladysnake.blast.common.init.BlastComponentTypes;
+import ladysnake.blast.common.init.BlastEntities;
+import ladysnake.blast.common.init.BlastItems;
+import ladysnake.blast.common.init.BlastSoundEvents;
 import moriyashiine.strawberrylib.api.SLib;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricTrackedDataRegistry;
@@ -33,7 +37,6 @@ public class Blast implements ModInitializer {
         BlastBlocks.init();
         BlastItems.init();
         BlastComponentTypes.init();
-        BlastRecipeSerializers.init();
         BlastSoundEvents.initialize();
     }
 
