@@ -1,5 +1,6 @@
 package ladysnake.blast.common.init;
 
+import java.util.function.Function;
 import ladysnake.blast.common.entity.BombEntity;
 import ladysnake.blast.common.item.BombItem;
 import ladysnake.blast.common.item.PipeBombItem;
@@ -10,9 +11,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.RegistryKey;
-
-import java.util.function.Function;
-
 import static moriyashiine.strawberrylib.api.module.SLibRegistries.registerItem;
 
 public class BlastItems {
@@ -27,6 +25,8 @@ public class BlastItems {
     public static Item CONFETTI_TRIGGER_BOMB = registerTriggerBomb("confetti_trigger_bomb", BlastEntities.CONFETTI_TRIGGER_BOMB, ItemGroups.TOOLS);
     public static Item DIRT_BOMB = registerBomb("dirt_bomb", BlastEntities.DIRT_BOMB, ItemGroups.TOOLS);
     public static Item DIRT_TRIGGER_BOMB = registerTriggerBomb("dirt_trigger_bomb", BlastEntities.DIRT_TRIGGER_BOMB, ItemGroups.TOOLS);
+    public static Item SAND_BOMB = registerBomb("sand_bomb", BlastEntities.SAND_BOMB, ItemGroups.TOOLS);
+    public static Item SAND_TRIGGER_BOMB = registerTriggerBomb("sand_trigger_bomb", BlastEntities.SAND_TRIGGER_BOMB, ItemGroups.TOOLS);
     public static Item PEARL_BOMB = registerBomb("pearl_bomb", BlastEntities.PEARL_BOMB, ItemGroups.TOOLS);
     public static Item PEARL_TRIGGER_BOMB = registerTriggerBomb("pearl_trigger_bomb", BlastEntities.PEARL_TRIGGER_BOMB, ItemGroups.TOOLS);
     public static Item SLIME_BOMB = registerBomb("slime_bomb", BlastEntities.SLIME_BOMB, ItemGroups.TOOLS);

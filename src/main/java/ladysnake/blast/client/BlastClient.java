@@ -1,5 +1,6 @@
 package ladysnake.blast.client;
 
+import java.util.function.Function;
 import ladysnake.blast.client.particle.ConfettiParticle;
 import ladysnake.blast.client.particle.DryIceParticle;
 import ladysnake.blast.client.particle.FollyRedPaintParticle;
@@ -29,8 +30,6 @@ import net.minecraft.particle.SimpleParticleType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
-import java.util.function.Function;
-
 @Environment(EnvType.CLIENT)
 public class BlastClient implements ClientModInitializer {
 
@@ -54,6 +53,8 @@ public class BlastClient implements ClientModInitializer {
             BlastEntities.CONFETTI_TRIGGER_BOMB,
             BlastEntities.DIRT_BOMB,
             BlastEntities.DIRT_TRIGGER_BOMB,
+            BlastEntities.SAND_BOMB,
+            BlastEntities.SAND_TRIGGER_BOMB,
             BlastEntities.PEARL_BOMB,
             BlastEntities.PEARL_TRIGGER_BOMB,
             BlastEntities.AMETHYST_BOMB,

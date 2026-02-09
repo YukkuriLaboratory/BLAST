@@ -1,12 +1,36 @@
 package ladysnake.blast.common.init;
 
-import ladysnake.blast.common.entity.*;
+import ladysnake.blast.common.entity.AmethystBombEntity;
+import ladysnake.blast.common.entity.AmethystTriggerBombEntity;
+import ladysnake.blast.common.entity.BombEntity;
+import ladysnake.blast.common.entity.BonesburrierEntity;
+import ladysnake.blast.common.entity.ColdDiggerEntity;
+import ladysnake.blast.common.entity.ConfettiBombEntity;
+import ladysnake.blast.common.entity.ConfettiTriggerBombEntity;
+import ladysnake.blast.common.entity.DiamondBombEntity;
+import ladysnake.blast.common.entity.DiamondTriggerBombEntity;
+import ladysnake.blast.common.entity.DirtBombEntity;
+import ladysnake.blast.common.entity.DirtTriggerBombEntity;
+import ladysnake.blast.common.entity.FrostBombEntity;
+import ladysnake.blast.common.entity.FrostTriggerBombEntity;
+import ladysnake.blast.common.entity.GoldenBombEntity;
+import ladysnake.blast.common.entity.GoldenTriggerBombEntity;
+import ladysnake.blast.common.entity.GunpowderBlockEntity;
+import ladysnake.blast.common.entity.NavalMineEntity;
+import ladysnake.blast.common.entity.PearlBombEntity;
+import ladysnake.blast.common.entity.PearlTriggerBombEntity;
+import ladysnake.blast.common.entity.PipeBombEntity;
+import ladysnake.blast.common.entity.SandBombEntity;
+import ladysnake.blast.common.entity.SandTriggerBombEntity;
+import ladysnake.blast.common.entity.SlimeBombEntity;
+import ladysnake.blast.common.entity.SlimeTriggerBombEntity;
+import ladysnake.blast.common.entity.StripminerEntity;
+import ladysnake.blast.common.entity.TriggerBombEntity;
 import ladysnake.blast.common.entity.projectiles.AmethystShardEntity;
 import ladysnake.blast.common.entity.projectiles.IcicleEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
-
 import static moriyashiine.strawberrylib.api.module.SLibRegistries.registerEntityType;
 
 public class BlastEntities {
@@ -21,6 +45,8 @@ public class BlastEntities {
     public static EntityType<BombEntity> CONFETTI_TRIGGER_BOMB = registerEntityType("confetti_trigger_bomb", createBombEntityType(ConfettiTriggerBombEntity::new));
     public static EntityType<BombEntity> DIRT_BOMB = registerEntityType("dirt_bomb", createBombEntityType(DirtBombEntity::new));
     public static EntityType<BombEntity> DIRT_TRIGGER_BOMB = registerEntityType("dirt_trigger_bomb", createBombEntityType(DirtTriggerBombEntity::new));
+    public static EntityType<BombEntity> SAND_BOMB = registerEntityType("sand_bomb", createBombEntityType(SandBombEntity::new));
+    public static EntityType<BombEntity> SAND_TRIGGER_BOMB = registerEntityType("sand_trigger_bomb", createBombEntityType(SandTriggerBombEntity::new));
     public static EntityType<BombEntity> PEARL_BOMB = registerEntityType("pearl_bomb", createBombEntityType(PearlBombEntity::new));
     public static EntityType<BombEntity> PEARL_TRIGGER_BOMB = registerEntityType("pearl_trigger_bomb", createBombEntityType(PearlTriggerBombEntity::new));
     public static EntityType<BombEntity> SLIME_BOMB = registerEntityType("slime_bomb", createBombEntityType(SlimeBombEntity::new));

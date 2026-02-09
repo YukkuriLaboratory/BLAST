@@ -3,6 +3,7 @@
  */
 package ladysnake.blast.data.provider;
 
+import java.util.concurrent.CompletableFuture;
 import ladysnake.blast.common.Blast;
 import ladysnake.blast.common.init.BlastBlocks;
 import ladysnake.blast.common.init.BlastItems;
@@ -18,8 +19,6 @@ import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.BuiltinRegistries;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
-
-import java.util.concurrent.CompletableFuture;
 
 public class BlastRecipeProvider extends FabricRecipeProvider {
     public BlastRecipeProvider(FabricDataOutput output) {
@@ -42,6 +41,8 @@ public class BlastRecipeProvider extends FabricRecipeProvider {
                 createShapeless(RecipeCategory.TOOLS, BlastItems.CONFETTI_TRIGGER_BOMB, 4).input(Items.GUNPOWDER).input(ConventionalItemTags.REDSTONE_DUSTS).input(Items.PAPER).input(Items.PAPER).input(Items.PAPER).input(Items.PAPER).input(Items.PAPER).input(Items.PAPER).input(Items.PAPER).criterion("has_paper", conditionsFromItem(Items.PAPER)).offerTo(exporter);
                 createShaped(RecipeCategory.TOOLS, BlastItems.DIRT_BOMB).input('D', ItemTags.DIRT).input('B', BlastItems.BOMB).pattern("DDD").pattern("DBD").pattern("DDD").criterion("has_bomb", conditionsFromItem(BlastItems.BOMB)).offerTo(exporter);
                 createShaped(RecipeCategory.TOOLS, BlastItems.DIRT_TRIGGER_BOMB).input('D', ItemTags.DIRT).input('B', BlastItems.TRIGGER_BOMB).pattern("DDD").pattern("DBD").pattern("DDD").criterion("has_bomb", conditionsFromItem(BlastItems.TRIGGER_BOMB)).offerTo(exporter);
+                createShaped(RecipeCategory.TOOLS, BlastItems.SAND_BOMB).input('D', ItemTags.SAND).input('B', BlastItems.BOMB).pattern("DDD").pattern("DBD").pattern("DDD").criterion("has_bomb", conditionsFromItem(BlastItems.BOMB)).offerTo(exporter);
+                createShaped(RecipeCategory.TOOLS, BlastItems.SAND_TRIGGER_BOMB).input('D', ItemTags.SAND).input('B', BlastItems.TRIGGER_BOMB).pattern("DDD").pattern("DBD").pattern("DDD").criterion("has_bomb", conditionsFromItem(BlastItems.TRIGGER_BOMB)).offerTo(exporter);
                 createShapeless(RecipeCategory.TOOLS, BlastItems.PEARL_BOMB, 4).input(Items.GUNPOWDER).input(ConventionalItemTags.ENDER_PEARLS).input(ConventionalItemTags.STRINGS).criterion("has_pearl", conditionsFromTag(ConventionalItemTags.ENDER_PEARLS)).offerTo(exporter);
                 createShapeless(RecipeCategory.TOOLS, BlastItems.PEARL_TRIGGER_BOMB, 4).input(Items.GUNPOWDER).input(ConventionalItemTags.ENDER_PEARLS).input(ConventionalItemTags.REDSTONE_DUSTS).criterion("has_pearl", conditionsFromTag(ConventionalItemTags.ENDER_PEARLS)).offerTo(exporter);
                 createShapeless(RecipeCategory.TOOLS, BlastItems.SLIME_BOMB, 4).input(Items.GUNPOWDER).input(ConventionalItemTags.SLIME_BALLS).input(ConventionalItemTags.STRINGS).criterion("has_slime", conditionsFromTag(ConventionalItemTags.SLIME_BALLS)).offerTo(exporter);

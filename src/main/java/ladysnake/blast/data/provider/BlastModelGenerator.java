@@ -3,6 +3,7 @@
  */
 package ladysnake.blast.data.provider;
 
+import java.util.Optional;
 import ladysnake.blast.common.Blast;
 import ladysnake.blast.common.block.RemoteDetonatorBlock;
 import ladysnake.blast.common.init.BlastBlocks;
@@ -10,12 +11,17 @@ import ladysnake.blast.common.init.BlastItems;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.block.Block;
-import net.minecraft.client.data.*;
+import net.minecraft.client.data.BlockStateModelGenerator;
+import net.minecraft.client.data.ItemModelGenerator;
+import net.minecraft.client.data.Model;
+import net.minecraft.client.data.ModelIds;
+import net.minecraft.client.data.Models;
+import net.minecraft.client.data.TextureKey;
+import net.minecraft.client.data.TextureMap;
+import net.minecraft.client.data.TexturedModel;
+import net.minecraft.client.data.VariantsBlockModelDefinitionCreator;
 import net.minecraft.client.render.model.json.WeightedVariant;
 import net.minecraft.util.Identifier;
-
-import java.util.Optional;
-
 import static net.minecraft.client.data.BlockStateModelGenerator.createWeightedVariant;
 
 public class BlastModelGenerator extends FabricModelProvider {
@@ -51,6 +57,8 @@ public class BlastModelGenerator extends FabricModelProvider {
         generator.register(BlastItems.CONFETTI_TRIGGER_BOMB, Models.GENERATED);
         generator.register(BlastItems.DIRT_BOMB, Models.GENERATED);
         generator.register(BlastItems.DIRT_TRIGGER_BOMB, Models.GENERATED);
+        generator.register(BlastItems.SAND_BOMB, Models.GENERATED);
+        generator.register(BlastItems.SAND_TRIGGER_BOMB, Models.GENERATED);
         generator.register(BlastItems.PEARL_BOMB, Models.GENERATED);
         generator.register(BlastItems.PEARL_TRIGGER_BOMB, Models.GENERATED);
         generator.register(BlastItems.SLIME_BOMB, Models.GENERATED);
