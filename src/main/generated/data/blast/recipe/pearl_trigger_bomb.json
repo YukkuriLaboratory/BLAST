@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-	"minecraft:gunpowder",
-	"#c:ender_pearls",
-	"#c:dusts/redstone"
+    "minecraft:gunpowder",
+    "#c:ender_pearls",
+    "#c:dusts/redstone"
   ],
   "result": {
-	"count": 4,
-	"id": "blast:pearl_trigger_bomb"
+    "count": 4,
+    "id": "blast:pearl_trigger_bomb"
   }
 }

@@ -1,8 +1,8 @@
 {
   "values": [
-	{
-	  "id": "blast:icicle",
-	  "required": false
-	}
+    {
+      "id": "blast:icicle",
+      "required": false
+    }
   ]
 }

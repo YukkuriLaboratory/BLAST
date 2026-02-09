@@ -5,6 +5,6 @@
   "experience": 0.05,
   "ingredient": "blast:folly_red_paint",
   "result": {
-	"id": "blast:dried_folly_red_paint"
+    "id": "blast:dried_folly_red_paint"
   }
 }

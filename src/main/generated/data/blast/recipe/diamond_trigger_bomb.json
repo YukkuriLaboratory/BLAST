@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-	"minecraft:gunpowder",
-	"#c:gems/diamond",
-	"#c:dusts/redstone"
+    "minecraft:gunpowder",
+    "#c:gems/diamond",
+    "#c:dusts/redstone"
   ],
   "result": {
-	"count": 4,
-	"id": "blast:diamond_trigger_bomb"
+    "count": 4,
+    "id": "blast:diamond_trigger_bomb"
   }
 }

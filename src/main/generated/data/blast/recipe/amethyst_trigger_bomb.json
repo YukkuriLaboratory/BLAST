@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-	"minecraft:gunpowder",
-	"minecraft:amethyst_block",
-	"#c:dusts/redstone"
+    "minecraft:gunpowder",
+    "minecraft:amethyst_block",
+    "#c:dusts/redstone"
   ],
   "result": {
-	"count": 4,
-	"id": "blast:amethyst_trigger_bomb"
+    "count": 4,
+    "id": "blast:amethyst_trigger_bomb"
   }
 }

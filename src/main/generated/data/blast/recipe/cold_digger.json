@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-	"P": "minecraft:packed_ice",
-	"S": "blast:stripminer"
+    "P": "minecraft:packed_ice",
+    "S": "blast:stripminer"
   },
   "pattern": [
-	" P ",
-	"PSP",
-	" P "
+    " P ",
+    "PSP",
+    " P "
   ],
   "result": {
-	"count": 1,
-	"id": "blast:cold_digger"
+    "count": 1,
+    "id": "blast:cold_digger"
   }
 }

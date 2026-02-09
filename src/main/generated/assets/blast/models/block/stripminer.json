@@ -1,6 +1,6 @@
 {
   "parent": "blast:block/template_stripminer",
   "textures": {
-	"particle": "blast:block/stripminer"
+    "particle": "blast:block/stripminer"
   }
 }

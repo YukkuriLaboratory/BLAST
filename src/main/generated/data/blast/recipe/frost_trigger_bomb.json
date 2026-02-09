@@ -2,12 +2,12 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-	"minecraft:gunpowder",
-	"minecraft:packed_ice",
-	"#c:dusts/redstone"
+    "minecraft:gunpowder",
+    "minecraft:packed_ice",
+    "#c:dusts/redstone"
   ],
   "result": {
-	"count": 4,
-	"id": "blast:frost_trigger_bomb"
+    "count": 4,
+    "id": "blast:frost_trigger_bomb"
   }
 }

@@ -1,6 +1,6 @@
 {
   "model": {
-	"type": "minecraft:model",
-	"model": "blast:block/cold_digger"
+    "type": "minecraft:model",
+    "model": "blast:block/cold_digger"
   }
 }

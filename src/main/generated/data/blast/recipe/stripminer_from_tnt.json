@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "category": "redstone",
   "key": {
-	"C": "minecraft:stonecutter",
-	"P": "#minecraft:planks",
-	"S": "#minecraft:wooden_slabs",
-	"T": "minecraft:tnt"
+    "C": "minecraft:stonecutter",
+    "P": "#minecraft:planks",
+    "S": "#minecraft:wooden_slabs",
+    "T": "minecraft:tnt"
   },
   "pattern": [
-	"PCP",
-	"PTP",
-	"PSP"
+    "PCP",
+    "PTP",
+    "PSP"
   ],
   "result": {
-	"count": 1,
-	"id": "blast:stripminer"
+    "count": 1,
+    "id": "blast:stripminer"
   }
 }

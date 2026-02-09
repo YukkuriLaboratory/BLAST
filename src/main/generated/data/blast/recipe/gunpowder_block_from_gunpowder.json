@@ -3,10 +3,10 @@
   "category": "misc",
   "group": "gunpowder",
   "ingredients": [
-	"blast:gunpowder_block"
+    "blast:gunpowder_block"
   ],
   "result": {
-	"count": 9,
-	"id": "minecraft:gunpowder"
+    "count": 9,
+    "id": "minecraft:gunpowder"
   }
 }

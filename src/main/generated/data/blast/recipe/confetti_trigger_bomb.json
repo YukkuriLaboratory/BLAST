@@ -2,18 +2,18 @@
   "type": "minecraft:crafting_shapeless",
   "category": "equipment",
   "ingredients": [
-	"minecraft:gunpowder",
-	"#c:dusts/redstone",
-	"minecraft:paper",
-	"minecraft:paper",
-	"minecraft:paper",
-	"minecraft:paper",
-	"minecraft:paper",
-	"minecraft:paper",
-	"minecraft:paper"
+    "minecraft:gunpowder",
+    "#c:dusts/redstone",
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:paper",
+    "minecraft:paper"
   ],
   "result": {
-	"count": 4,
-	"id": "blast:confetti_trigger_bomb"
+    "count": 4,
+    "id": "blast:confetti_trigger_bomb"
   }
 }
