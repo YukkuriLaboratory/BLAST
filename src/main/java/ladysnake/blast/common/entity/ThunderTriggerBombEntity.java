@@ -22,8 +22,8 @@ public class ThunderTriggerBombEntity extends TriggerBombEntity {
         if(getEntityWorld().isClient()) return;
         LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(getEntityWorld(), SpawnReason.TRIGGERED);
         if (lightningEntity != null) {
+            lightningEntity.setCosmetic(false);
             lightningEntity.refreshPositionAfterTeleport(getX(), getY(), getZ());
-            lightningEntity.setCosmetic(true);
             getEntityWorld().spawnEntity(lightningEntity);
         }
         remove(RemovalReason.DISCARDED);
