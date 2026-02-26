@@ -35,6 +35,9 @@ public class BlastItems {
     public static Item AMETHYST_TRIGGER_BOMB = registerTriggerBomb("amethyst_trigger_bomb", BlastEntities.AMETHYST_TRIGGER_BOMB, ItemGroups.COMBAT);
     public static Item FROST_BOMB = registerBomb("frost_bomb", BlastEntities.FROST_BOMB, ItemGroups.COMBAT);
     public static Item FROST_TRIGGER_BOMB = registerTriggerBomb("frost_trigger_bomb", BlastEntities.FROST_TRIGGER_BOMB, ItemGroups.COMBAT);
+    public static Item THUNDER_BOMB = registerBomb("thunder_bomb", BlastEntities.THUNDER_BOMB, ItemGroups.COMBAT);
+    public static Item THUNDER_TRIGGER_BOMB = registerBomb("thunder_trigger_bomb", BlastEntities.THUNDER_TRIGGER_BOMB, ItemGroups.COMBAT);
+
     public static Item PIPE_BOMB = register("pipe_bomb", PipeBombItem::new, new Item.Settings().maxCount(16), ItemGroups.COMBAT);
 
     public static void init() {

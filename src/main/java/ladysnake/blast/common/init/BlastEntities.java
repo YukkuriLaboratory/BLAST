@@ -25,6 +25,8 @@ import ladysnake.blast.common.entity.SandTriggerBombEntity;
 import ladysnake.blast.common.entity.SlimeBombEntity;
 import ladysnake.blast.common.entity.SlimeTriggerBombEntity;
 import ladysnake.blast.common.entity.StripminerEntity;
+import ladysnake.blast.common.entity.ThunderBombEntity;
+import ladysnake.blast.common.entity.ThunderTriggerBombEntity;
 import ladysnake.blast.common.entity.TriggerBombEntity;
 import ladysnake.blast.common.entity.projectiles.AmethystShardEntity;
 import ladysnake.blast.common.entity.projectiles.IcicleEntity;
@@ -55,6 +57,8 @@ public class BlastEntities {
     public static EntityType<BombEntity> AMETHYST_TRIGGER_BOMB = registerEntityType("amethyst_trigger_bomb", createBombEntityType(AmethystTriggerBombEntity::new));
     public static EntityType<BombEntity> FROST_BOMB = registerEntityType("frost_bomb", createBombEntityType(FrostBombEntity::new));
     public static EntityType<BombEntity> FROST_TRIGGER_BOMB = registerEntityType("frost_trigger_bomb", createBombEntityType(FrostTriggerBombEntity::new));
+    public static EntityType<BombEntity> THUNDER_BOMB = registerEntityType("thunder_bomb", createBombEntityType(ThunderBombEntity::new));
+    public static EntityType<BombEntity> THUNDER_TRIGGER_BOMB = registerEntityType("thunder_trigger_bomb", createBombEntityType(ThunderTriggerBombEntity::new));
     public static EntityType<PipeBombEntity> PIPE_BOMB = registerEntityType("pipe_bomb", createBombEntityType(PipeBombEntity::new));
 
     public static EntityType<GunpowderBlockEntity> GUNPOWDER_BLOCK = registerEntityType("gunpowder_block", EntityType.Builder.create(GunpowderBlockEntity::new, SpawnGroup.MISC).dimensions(1, 1).maxTrackingRange(10).trackingTickInterval(20));

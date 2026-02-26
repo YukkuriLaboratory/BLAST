@@ -67,6 +67,8 @@ public class BlastModelGenerator extends FabricModelProvider {
         generator.register(BlastItems.AMETHYST_TRIGGER_BOMB, Models.GENERATED);
         generator.register(BlastItems.FROST_BOMB, Models.GENERATED);
         generator.register(BlastItems.FROST_TRIGGER_BOMB, Models.GENERATED);
+        generator.register(BlastItems.THUNDER_BOMB, Models.GENERATED);
+        generator.register(BlastItems.THUNDER_TRIGGER_BOMB, Models.GENERATED);
         generator.register(BlastItems.PIPE_BOMB, Models.GENERATED);
     }
 

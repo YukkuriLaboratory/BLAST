@@ -42,28 +42,30 @@ public class BlastClient implements ClientModInitializer {
 
     public static void registerRenders() {
         registerItemEntityRenders(
-            BlastEntities.BOMB,
-            BlastEntities.TRIGGER_BOMB,
-            BlastEntities.GOLDEN_BOMB,
-            BlastEntities.GOLDEN_TRIGGER_BOMB,
-            BlastEntities.DIAMOND_BOMB,
-            BlastEntities.DIAMOND_TRIGGER_BOMB,
-            BlastEntities.NAVAL_MINE,
-            BlastEntities.CONFETTI_BOMB,
-            BlastEntities.CONFETTI_TRIGGER_BOMB,
-            BlastEntities.DIRT_BOMB,
-            BlastEntities.DIRT_TRIGGER_BOMB,
-            BlastEntities.SAND_BOMB,
-            BlastEntities.SAND_TRIGGER_BOMB,
-            BlastEntities.PEARL_BOMB,
-            BlastEntities.PEARL_TRIGGER_BOMB,
-            BlastEntities.AMETHYST_BOMB,
-            BlastEntities.AMETHYST_TRIGGER_BOMB,
-            BlastEntities.FROST_BOMB,
-            BlastEntities.FROST_TRIGGER_BOMB,
-            BlastEntities.SLIME_BOMB,
-            BlastEntities.SLIME_TRIGGER_BOMB,
-            BlastEntities.PIPE_BOMB
+                BlastEntities.BOMB,
+                BlastEntities.TRIGGER_BOMB,
+                BlastEntities.GOLDEN_BOMB,
+                BlastEntities.GOLDEN_TRIGGER_BOMB,
+                BlastEntities.DIAMOND_BOMB,
+                BlastEntities.DIAMOND_TRIGGER_BOMB,
+                BlastEntities.NAVAL_MINE,
+                BlastEntities.CONFETTI_BOMB,
+                BlastEntities.CONFETTI_TRIGGER_BOMB,
+                BlastEntities.DIRT_BOMB,
+                BlastEntities.DIRT_TRIGGER_BOMB,
+                BlastEntities.SAND_BOMB,
+                BlastEntities.SAND_TRIGGER_BOMB,
+                BlastEntities.PEARL_BOMB,
+                BlastEntities.PEARL_TRIGGER_BOMB,
+                BlastEntities.AMETHYST_BOMB,
+                BlastEntities.AMETHYST_TRIGGER_BOMB,
+                BlastEntities.FROST_BOMB,
+                BlastEntities.FROST_TRIGGER_BOMB,
+                BlastEntities.SLIME_BOMB,
+                BlastEntities.SLIME_TRIGGER_BOMB,
+                BlastEntities.PIPE_BOMB,
+                BlastEntities.THUNDER_BOMB,
+                BlastEntities.THUNDER_TRIGGER_BOMB
         );
         registerBlockEntityRender(BlastEntities.GUNPOWDER_BLOCK, e -> BlastBlocks.GUNPOWDER_BLOCK.getDefaultState());
         registerBlockEntityRender(BlastEntities.STRIPMINER, StripminerEntity::getState);
@@ -71,9 +73,9 @@ public class BlastClient implements ClientModInitializer {
         registerBlockEntityRender(BlastEntities.BONESBURRIER, e -> BlastBlocks.BONESBURRIER.getDefaultState());
 
         BlockRenderLayerMap.putBlocks(BlockRenderLayer.CUTOUT,
-            BlastBlocks.GUNPOWDER_BLOCK, BlastBlocks.COLD_DIGGER,
-            BlastBlocks.STRIPMINER, BlastBlocks.BONESBURRIER,
-            BlastBlocks.REMOTE_DETONATOR
+                BlastBlocks.GUNPOWDER_BLOCK, BlastBlocks.COLD_DIGGER,
+                BlastBlocks.STRIPMINER, BlastBlocks.BONESBURRIER,
+                BlastBlocks.REMOTE_DETONATOR
         );
         BlockRenderLayerMap.putBlock(BlastBlocks.DRY_ICE, BlockRenderLayer.TRANSLUCENT);
 
